@@ -6,6 +6,5 @@ db.sqlite3
 .idea/
 .vscode/
 .pytest_cache/
-.env
 .DS_Store
 Thumbs.db

@@ -1,12 +1,8 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
-load_dotenv()
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = "django-insecure-012931238jjsoijef91-1-2ead9-0dfus0df9uijeifjsodif9"
 
 DEBUG = True
 
@@ -55,7 +51,7 @@ WSGI_APPLICATION = "taxi_service.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "NAME": "db.sqlite3",
     }
 }
 
